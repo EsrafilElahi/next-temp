@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component snapshot test 1`] = `
+<div>
+  <div
+    class="absolute top-[45%] left-[5%]"
+  >
+    <h1
+      class="text-[7vmin] md:text-[10vmin] leading-[2.5rem] md:leading-[5rem]"
+    >
+      Esrafil Elahi
+    </h1>
+    <h2
+      class="text-[3.5vmin] md:text-[5vmin] mb-3 md:mb-5"
+    >
+      Senior Frontend Engineer
+    </h2>
+    <button
+      class="btn-outline xs-only:text-[3vmin]"
+    >
+      About Me
+    </button>
+  </div>
+</div>
+`;

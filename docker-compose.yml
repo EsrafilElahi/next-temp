@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  dev:
+    build:
+      context: .
+      target: dev
+    container_name: next-dev-container
+    volumes:
+      - .:/app
+    ports:
+      - "3002:3000"
+    env_file:
+      - .env
+
+  prod:
+    build:
+      context: .
+      target: prod
+    # volumes:
+    #   - .:/app
+    # command: yarn start
+    container_name: next-prod-container
+    ports:
+      - "3003:3000"
+    environment:
+      NODE_ENV: production
